@@ -1,8 +1,8 @@
 body {
-    background: linear-gradient(to right, #ff0000, #0357ff);
+    background: linear-gradient(to right, #ffffff, #000000);
 }
 
-h1 p {
+h1 {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -11,5 +11,14 @@ h1 p {
     text-align: center; 
     font-family: 'Arial', sans-serif; 
     color: #fff; 
-    font-size: 29px; 
+    font-size: 35px; 
+    animation: swing 1s infinite; 
+}
+
+@keyframes swing {
+    0% { transform: translate(-50%, -50%) rotate(0deg); }
+    25% { transform: translate(-50%, -50%) rotate(5deg); }
+    50% { transform: translate(-50%, -50%) rotate(0deg); }
+    75% { transform: translate(-50%, -50%) rotate(-5deg); }
+    100% { transform: translate(-50%, -50%) rotate(0deg); }
 }
