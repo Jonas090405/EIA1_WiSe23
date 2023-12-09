@@ -8,16 +8,16 @@ let storyChoices = [
 let start = prompt(storyChoices[0].trim().toLowerCase());
 console.log(storyChoices[0]);
 
-if (start === "Geräusch nachgehen" || start === "nachgehen") {
+if (start === "Geräusch nachgehen" || start === "nachgehen" || start === "geräusch nachgehen") {
     console.log("Du entscheidest dich, dem Geräusch nachzugehen.");
     let choice = prompt(storyChoices[1]);
 
-    if (choice === "den Stein auf die Platte legen") {
+    if (choice === "den Stein auf die Platte legen" || choice === "Den Stein auf die Platte legen") {
         prompt("Du legst den Stein auf die alte Steinplatte und gehst weiter. Auf einmal hörst du ein lautes Krachen in den Wänden. Staub rieselt auf dich nieder, die Wände beginnen aufeinander zuzugehen, und der Gang schrumpft. Die Steinplatte hat einen Fallenmechanismus verspätet ausgelöst. Du rennst den ewig wirkenden Gang panisch entlang, doch es ist kein Ende in Sicht. Du wirst an lebendigem Leibe zerquetscht. *GAME OVER*");
         console.log("Du entscheidest dich, den Stein auf die Platte zu legen.");
 
-    } else if (choice === "Fuß von der Steinplatte erheben") 
-{       prompt("Du erhebst deinen Fuß und rennst so schnell du kannst aus dem Gang raus. Nach kurzer Zeit rieselt Staub auf dich nieder, die Wände beginnen sich zusammenzuziehen, und der Gang schrumpft. Die alte Steinplatte hat einen Fallenmechanismus verspätet ausgelöst! Du rennst weiter und schaffst es auf die letzte Sekunde aus dem Gang heraus, bevor die Wände dich bei lebendigem Leibe zerquetscht hätten. Du gehst weiter und plötzlich siehst du Licht aus einer Tür von oben auf deinen Arm hinabstrahlen. Du gehst die Treppe hinauf und kommst dem Licht immer näher. Du öffnest die Tür und traust deinen Augen nicht: Freiheit. An der naheliehgeden Straße fährt zufällig ein Einzelnes Taxi vorbei und nimmt dich sicher mit nachhause. *You Won!* Press any key and confirm to continue.");
+    } else if (choice === "Fuß von der Steinplatte erheben" || choice === "Fuß erheben") 
+{       prompt("Du erhebst deinen Fuß und rennst so schnell du kannst aus dem Gang raus. Nach kurzer Zeit rieselt Staub auf dich nieder, die Wände beginnen sich zusammenzuziehen, und der Gang schrumpft. Die alte Steinplatte hat einen Fallenmechanismus verspätet ausgelöst! Du rennst weiter und schaffst es auf die letzte Sekunde aus dem Gang heraus, bevor die Wände dich bei lebendigem Leibe zerquetscht hätten. Du gehst weiter und plötzlich siehst du Licht aus einer Tür von oben auf deinen Arm hinabstrahlen. Du gehst die Treppe hinauf und kommst dem Licht immer näher. Du öffnest die Tür und traust deinen Augen nicht: Freiheit. An der naheliehgeden Straße fährt zufällig ein einzelnes Taxi vorbei und nimmt dich sicher mit nachhause. *You Won!*");
         
         console.log("Du entscheidest dich, den Fuß von der Steinplatte zu erheben");
 
@@ -37,11 +37,11 @@ if (start === "Geräusch nachgehen" || start === "nachgehen") {
 
         let choice2= prompt(storyChoices[3])
 
-        if (choice2 === "die Wahrheit erzählen") {
+        if (choice2 === "die Wahrheit erzählen"||choice2 ==="Wahrheit") {
             prompt("Du erzählst den Fremden deine Geschichte und sie wirken sichtlich schockiert. Nach einigen weiteren  Minuten von plötzlicher, seltsamer Stille während der Autofahrt halten die Fremden das Fahrzeug an. Ehe du fragen konntest wieso sie angehalten haben gehen sie auf dich los und galten dich auf der Rückbank fest. Du spürst ein pieksen an deinem Hals und........Du wachst auf und befindest dich in einem dunklen, heruntergekommenen Verlies...*GAME OVER*");
             console.log("Du entscheidest dich, die Wahrheit zu erzählen.");
 
-        } else if (choice2 === "Lügen") {
+        } else if (choice2 === "Lügen" || choice2 === "Lüge") {
             prompt("Du erzählst den Fremden, dass su dich beim wandern verlaufen hast und zufällig auf die Farm und die naheliegende Straße getroffen bist. Obwohl die Fremden sich sichtlich komisch Verhalten, wollen sie dich am nächsten Bahnhof rauslassen. Als du aus dem Auto austeigst sagt der Fahrer:'Lass dich hier nie wieder blicken!' und fährt mit überhöhter Geschwindigkeit los. Trotz deiner Verwirrung über das was geschehen ist, schaffst du es mit dem Zug sicher nachhause. *You won!*");
             console.log("Du entscheidest dich, zu lügen.");
 
@@ -50,7 +50,7 @@ if (start === "Geräusch nachgehen" || start === "nachgehen") {
             alert("Ungültige Eingabe!");
         }
     } else if (choice === "linker Gang" || choice === "links" || choice === "linken gang" || choice === "heller gang") {
-        prompt("Du gehst den Gang entlang und kommst dem Licht und den sich immer merkwürdiger anhöhrenden Geräuschen näher. Als du den Raum betrittst siehst du eine Liege an die ein Mensch gefesselt wurde. Der Raum ähnelt einem Arztzimmer. Du drehst die Liege zu dir um den MEnschen zu befreien und dir fällt schockiernderweise auf, dass der Mensch tot ist. Er wurde auf brutalste Weise aufgeschnitten und ihm wurden sämtliche Organe entfernt. Auf ein mal hörst du einen leisen Schritt hinter dir. Bevor du dich umdrehen konntest hat ein Blutverschmierter Mann mit einem Doktorkittel dir mit einem Skalpell in den Hals gestochen. Du fällst zu Boden. Während du langsam ausblutest nimmst du wahr wie die Person dich aufnimmt und an die Liege fesstelt. Bevor du wahrnehmen konntest waa als näcbhtes passiert bist du aufgrund der Stichverletzung verblutet. *GAME OVER* ");
+        prompt("Du gehst den Gang entlang und kommst dem Licht und den sich immer merkwürdiger anhöhrenden Geräuschen näher. Als du den Raum betrittst siehst du eine Liege an die ein Mensch gefesselt wurde. Der Raum ähnelt einem Arztzimmer. Du drehst die Liege zu dir um den MEnschen zu befreien und dir fällt schockiernderweise auf, dass der Mensch tot ist. Er wurde auf brutalste Weise aufgeschnitten und ihm wurden sämtliche Organe entfernt. Auf ein mal hörst du einen leisen Schritt hinter dir. Bevor du dich umdrehen konntest hat ein Blutverschmierter Mann mit einem Doktorkittel dir mit einem Skalpell in den Hals gestochen. Du fällst zu Boden. Während du langsam ausblutest nimmst du wahr wie die Person dich aufnimmt und an die Liege fesstelt. Bevor du wahrnehmen konntest waa als nächstes passiert bist du aufgrund der Stichverletzung verblutet. *GAME OVER* ");
         console.log("Du entscheidest dich, den linken Gang zu nehmen.");
 
     } else {
