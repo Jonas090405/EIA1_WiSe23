@@ -1,8 +1,8 @@
 body {
     background: linear-gradient(to right, #ffffff, #000000);
-}
-
-h1 {
+  }
+  
+  h1 {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -12,13 +12,23 @@ h1 {
     font-family: 'Arial', sans-serif; 
     color: #fff; 
     font-size: 35px; 
-    animation: swing 1s infinite; 
-}
-
-@keyframes swing {
+  }
+  
+  @keyframes swing {
     0% { transform: translate(-50%, -50%) rotate(0deg); }
-    25% { transform: translate(-50%, -50%) rotate(5deg); }
-    50% { transform: translate(-50%, -50%) rotate(0deg); }
-    75% { transform: translate(-50%, -50%) rotate(-5deg); }
+    10% { transform: translate(-50%, -50%) rotate(3deg); }
+    20% { transform: translate(-50%, -50%) rotate(0deg); }
+    30% { transform: translate(-50%, -50%) rotate(-3deg); }
+    40% { transform: translate(-50%, -50%) rotate(0deg); }
+    50% { transform: translate(-50%, -50%) rotate(3deg); }
+    60% { transform: translate(-50%, -50%) rotate(0deg); }
+    70% { transform: translate(-50%, -50%) rotate(-3deg); }
+    80% { transform: translate(-50%, -50%) rotate(0deg); }
+    90% { transform: translate(-50%, -50%) rotate(3deg); }
     100% { transform: translate(-50%, -50%) rotate(0deg); }
-}
+  }
+  
+  .element-to-swing {
+    animation: swing 4s infinite ease-in-out;
+  }
+  
