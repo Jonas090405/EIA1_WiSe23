@@ -1,0 +1,52 @@
+body {
+    font-family: Consolas, monaco, monospace;
+    background-color: #2b2b2b;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#game-container {
+    background-color: #2d465e; 
+    color: #ecf0f1; 
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+}
+
+#output {
+    min-height: 100px;
+    border: 1px solid #34495e; 
+    padding: 10px;
+    margin-bottom: 10px;
+    overflow-y: auto;
+    background-color: #2c3e50; 
+}
+
+#input-container {
+    display: flex;
+}
+
+#user-input {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #34495e; 
+    border-radius: 4px;
+    margin-right: 5px;
+    background-color: #34495e; 
+    color: #ecf0f1; 
+}
+
+#submit-btn {
+    background-color: #26ae5f; 
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+}
